@@ -1,6 +1,9 @@
 name: 'Update Xcode Project Settings'
 description: 'Updates Xcode project settings for code signing'
 author: 'Carlos Li'
+branding:
+  icon: 'settings'
+  color: 'blue'
 inputs:
   project_path:
     description: 'Path to the Xcode project file'
