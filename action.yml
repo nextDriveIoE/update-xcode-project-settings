@@ -24,6 +24,9 @@ inputs:
     description: 'Code sign identity for iphoneos SDK'
     required: true
     default: 'iPhone Distribution'
+  development_team:
+    description: 'Development team ID'
+    required: false
 runs:
   using: "composite"
   steps:
@@ -45,3 +48,4 @@ runs:
         CODE_SIGN_STYLE: ${{ inputs.code_sign_style }}
         CODE_SIGN_IDENTITY: ${{ inputs.code_sign_identity }}
         CODE_SIGN_IDENTITY_IPHONEOS: ${{ inputs.code_sign_identity_iphoneos }}
+        DEVELOPMENT_TEAM: ${{ inputs.development_team }}
