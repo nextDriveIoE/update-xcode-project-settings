@@ -9,7 +9,6 @@ This action updates the Xcode project settings for code signing in iOS projects.
 - `code_sign_style`: Code sign style (default: 'Manual')
 - `code_sign_identity`: Code sign identity (default: 'iPhone Distribution')
 - `code_sign_identity_iphoneos`: Code sign identity for iphoneos SDK (default: 'iPhone Distribution')
-- `development_team`: Development team ID (optional)
 
 ## Example usage
 
@@ -18,7 +17,6 @@ uses: nextDriveIoE/update-xcode-settings-action@v1
 with:
   project_path: 'ios/Runner.xcodeproj/project.pbxproj'
   provisioning_profile_specifier: 'Your Provisioning Profile'
-  development_team: 'YOUR_TEAM_ID'
   code_sign_style: 'Manual'
   code_sign_identity: 'iPhone Distribution'
   code_sign_identity_iphoneos: 'iPhone Distribution'
